@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicLogo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ec-UR-JkC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dynamic App Icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJB-Jn-ZeX">
+                                        <rect key="frame" x="20" y="20" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hf5-ZM-wL0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L74-jD-ajm">
+                                        <rect key="frame" x="30" y="608" width="354" height="190"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGQ-nP-x1p">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                                <color key="backgroundColor" red="0.93282037969999998" green="0.46934694049999998" blue="0.68872171640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="25"/>
+                                                <state key="normal" title="set iOS Logo">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="iosBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYa-2p-Rzc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLb-8m-EO9">
+                                                <rect key="frame" x="0.0" y="70" width="354" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="25"/>
+                                                <state key="normal" title="set Android Logo">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="androidBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jN8-Xa-sI2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzI-mO-ecl">
+                                                <rect key="frame" x="0.0" y="140" width="354" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="09I-Pc-ziW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="25"/>
+                                                <state key="normal" title="set flutter Logo">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="flutterBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvQ-u3-eHP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jre-W5-abv">
+                                        <rect key="frame" x="10" y="80" width="394" height="518"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksb-Kl-mhp">
+                                                <rect key="frame" x="20" y="20" width="354" height="231.5"/>
+                                                <string key="text">iOS 10.3 finally gives developers the ability to change their app’s icon programmatically.  For that we need "suppportAlernateIcon"  to "Yes" in Indo.plist                                                                  Both primary and secondary icons should be added in CFBundleIcons key of your app's Info.plist file.  the alernate icon we want to mention in CFBundleAlternateIcons.</string>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ksb-Kl-mhp" secondAttribute="bottom" constant="20" id="K7d-mR-jpZ"/>
+                                            <constraint firstItem="ksb-Kl-mhp" firstAttribute="leading" secondItem="jre-W5-abv" secondAttribute="leading" constant="20" id="PGn-5S-omB"/>
+                                            <constraint firstAttribute="trailing" secondItem="ksb-Kl-mhp" secondAttribute="trailing" constant="20" id="VBc-AT-TeN"/>
+                                            <constraint firstItem="ksb-Kl-mhp" firstAttribute="top" secondItem="jre-W5-abv" secondAttribute="top" constant="20" id="wFB-Pd-9AE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="jre-W5-abv" firstAttribute="leading" secondItem="9ec-UR-JkC" secondAttribute="leading" constant="10" id="0hJ-fM-kSv"/>
+                                    <constraint firstAttribute="trailing" secondItem="jre-W5-abv" secondAttribute="trailing" constant="10" id="4Fx-MD-VRX"/>
+                                    <constraint firstItem="L74-jD-ajm" firstAttribute="top" secondItem="jre-W5-abv" secondAttribute="bottom" constant="10" id="87L-1t-QzC"/>
+                                    <constraint firstAttribute="trailing" secondItem="L74-jD-ajm" secondAttribute="trailing" constant="30" id="Adp-UO-eLH"/>
+                                    <constraint firstItem="PJB-Jn-ZeX" firstAttribute="leading" secondItem="9ec-UR-JkC" secondAttribute="leading" constant="20" id="PEK-Fa-KnZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="L74-jD-ajm" secondAttribute="bottom" constant="20" id="auH-kb-xBJ"/>
+                                    <constraint firstItem="jre-W5-abv" firstAttribute="top" secondItem="PJB-Jn-ZeX" secondAttribute="bottom" constant="10" id="lWy-NN-Ea4"/>
+                                    <constraint firstItem="PJB-Jn-ZeX" firstAttribute="top" secondItem="9ec-UR-JkC" secondAttribute="top" constant="20" id="oPh-7q-Wau"/>
+                                    <constraint firstAttribute="trailing" secondItem="PJB-Jn-ZeX" secondAttribute="trailing" constant="20" id="weZ-Aw-tqK"/>
+                                    <constraint firstItem="L74-jD-ajm" firstAttribute="leading" secondItem="9ec-UR-JkC" secondAttribute="leading" constant="30" id="z0y-69-wyq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9ec-UR-JkC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ZQ-5t-lVE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ec-UR-JkC" secondAttribute="trailing" id="TIG-2S-2B0"/>
+                            <constraint firstItem="9ec-UR-JkC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j0r-eL-6K0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9ec-UR-JkC" secondAttribute="bottom" id="zuB-cY-HwN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="androidBtn" destination="PLb-8m-EO9" id="yka-SE-G9u"/>
+                        <outlet property="flutterBtn" destination="GzI-mO-ecl" id="vP3-Or-O8w"/>
+                        <outlet property="iosBtn" destination="vGQ-nP-x1p" id="KHK-Ya-qpB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="90"/>
+        </scene>
+    </scenes>
+</document>
