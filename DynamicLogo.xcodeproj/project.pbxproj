@@ -22,6 +22,8 @@
 		9092F2F2246C1E7D0087443D /* ios_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092F2EE246C1E7D0087443D /* ios_logo@3x.png */; };
 		9092F2F3246C1E7D0087443D /* ios_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092F2EF246C1E7D0087443D /* ios_logo.png */; };
 		9092F2F4246C1E7D0087443D /* flutter_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9092F2F0246C1E7D0087443D /* flutter_logo@3x.png */; };
+		9092F2F6246D24C70087443D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9092F2F5246D24C70087443D /* PreviewViewController.swift */; };
+		90A12909246D6F370017C6A4 /* ConttextMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A12908246D6F370017C6A4 /* ConttextMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		9092F2EE246C1E7D0087443D /* ios_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_logo@3x.png"; sourceTree = "<group>"; };
 		9092F2EF246C1E7D0087443D /* ios_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_logo.png; sourceTree = "<group>"; };
 		9092F2F0246C1E7D0087443D /* flutter_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flutter_logo@3x.png"; sourceTree = "<group>"; };
+		9092F2F5246D24C70087443D /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		90A12908246D6F370017C6A4 /* ConttextMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConttextMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				9092F2D7246C1D180087443D /* Assets.xcassets */,
 				9092F2D9246C1D180087443D /* LaunchScreen.storyboard */,
 				9092F2DC246C1D180087443D /* Info.plist */,
+				9092F2F5246D24C70087443D /* PreviewViewController.swift */,
+				90A12908246D6F370017C6A4 /* ConttextMenuViewController.swift */,
 			);
 			path = DynamicLogo;
 			sourceTree = "<group>";
@@ -184,7 +190,9 @@
 			files = (
 				9092F2D3246C1D100087443D /* ViewController.swift in Sources */,
 				9092F2CF246C1D100087443D /* AppDelegate.swift in Sources */,
+				90A12909246D6F370017C6A4 /* ConttextMenuViewController.swift in Sources */,
 				9092F2D1246C1D100087443D /* SceneDelegate.swift in Sources */,
+				9092F2F6246D24C70087443D /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

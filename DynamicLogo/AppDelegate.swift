@@ -11,10 +11,10 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         return true
     }
 
@@ -33,5 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        print("ApplicationShourCut", shortcutItem)
+        if shortcutItem.type == "UIApplicationShortcutItemType"{
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initViewController  = storyBoard.instantiateViewController(withIdentifier: "3dtouch")
+            self.window?.rootViewController = initViewController
+            self.window?.makeKeyAndVisible()
+        }
+    }
 }
 

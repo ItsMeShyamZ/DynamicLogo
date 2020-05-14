@@ -93,5 +93,18 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Shortcut</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Static</string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>abservetech.DynamicLogo.showPictures</string>
+		</dict>
+	</array>
 </dict>
 </plist>

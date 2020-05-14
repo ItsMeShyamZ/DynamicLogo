@@ -122,5 +122,116 @@
             </objects>
             <point key="canvasLocation" x="139" y="90"/>
         </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="XAD-lt-SJH">
+            <objects>
+                <viewController storyboardIdentifier="PreviewViewController" id="rr8-yJ-lcw" customClass="PreviewViewController" customModule="DynamicLogo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E2E-MD-QDo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-bo-KgU">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="rka-E9-GWi">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="rka-E9-GWi" firstAttribute="top" secondItem="M9h-bo-KgU" secondAttribute="top" id="5ul-O3-IJD"/>
+                                    <constraint firstItem="rka-E9-GWi" firstAttribute="leading" secondItem="M9h-bo-KgU" secondAttribute="leading" id="K2N-Ra-8Dk"/>
+                                    <constraint firstAttribute="trailing" secondItem="rka-E9-GWi" secondAttribute="trailing" id="a87-QC-MBY"/>
+                                    <constraint firstAttribute="bottom" secondItem="rka-E9-GWi" secondAttribute="bottom" id="chG-f9-6Ze"/>
+                                    <constraint firstAttribute="height" constant="300" id="t1R-ci-4TS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peek and Pop Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-SB-g4t">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MhH-Ky-0U0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M9h-bo-KgU" firstAttribute="leading" secondItem="9VI-eL-aE5" secondAttribute="leading" constant="20" id="DR8-js-M2j"/>
+                            <constraint firstItem="EIh-SB-g4t" firstAttribute="leading" secondItem="E2E-MD-QDo" secondAttribute="leading" constant="20" id="IJy-Os-5ry"/>
+                            <constraint firstItem="M9h-bo-KgU" firstAttribute="centerX" secondItem="E2E-MD-QDo" secondAttribute="centerX" id="Ofh-yU-d0e"/>
+                            <constraint firstItem="EIh-SB-g4t" firstAttribute="top" secondItem="9VI-eL-aE5" secondAttribute="top" constant="20" id="QsK-Vq-khn"/>
+                            <constraint firstItem="M9h-bo-KgU" firstAttribute="centerY" secondItem="E2E-MD-QDo" secondAttribute="centerY" id="Ucu-Kg-7wB"/>
+                            <constraint firstItem="9VI-eL-aE5" firstAttribute="trailing" secondItem="M9h-bo-KgU" secondAttribute="trailing" constant="20" id="qUA-ET-UAb"/>
+                            <constraint firstItem="9VI-eL-aE5" firstAttribute="trailing" secondItem="EIh-SB-g4t" secondAttribute="trailing" constant="20" id="zai-Nu-69t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9VI-eL-aE5"/>
+                    </view>
+                    <connections>
+                        <outlet property="iconImage" destination="rka-E9-GWi" id="4qg-pB-Maw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="360-BD-hfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="82"/>
+        </scene>
+        <!--Conttext Menu View Controller-->
+        <scene sceneID="68e-jd-jhO">
+            <objects>
+                <viewController storyboardIdentifier="ConttextMenuViewController" id="D9g-xJ-q4U" customClass="ConttextMenuViewController" customModule="DynamicLogo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iE7-4h-VPG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M2-iQ-CH3">
+                                <rect key="frame" x="20" y="298" width="374" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NzC-kN-6mG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1Lb-TD-tWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="NzC-kN-6mG" secondAttribute="bottom" id="9Ea-kl-BCr"/>
+                                    <constraint firstAttribute="trailing" secondItem="NzC-kN-6mG" secondAttribute="trailing" id="ZHE-Wp-jUg"/>
+                                    <constraint firstItem="NzC-kN-6mG" firstAttribute="leading" secondItem="5M2-iQ-CH3" secondAttribute="leading" id="cZl-Z7-qZa"/>
+                                    <constraint firstItem="NzC-kN-6mG" firstAttribute="top" secondItem="5M2-iQ-CH3" secondAttribute="top" id="dZJ-Ks-1V2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Context Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0n-Ve-Q4G">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cY6-nv-c6M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5M2-iQ-CH3" firstAttribute="centerY" secondItem="iE7-4h-VPG" secondAttribute="centerY" id="6zy-e8-L8g"/>
+                            <constraint firstItem="H0n-Ve-Q4G" firstAttribute="leading" secondItem="d2l-IH-Lk0" secondAttribute="leading" constant="20" id="CLi-OL-Kt8"/>
+                            <constraint firstItem="5M2-iQ-CH3" firstAttribute="leading" secondItem="d2l-IH-Lk0" secondAttribute="leading" constant="20" id="QbO-ED-T6c"/>
+                            <constraint firstItem="5M2-iQ-CH3" firstAttribute="centerX" secondItem="iE7-4h-VPG" secondAttribute="centerX" id="ROc-0U-4Nn"/>
+                            <constraint firstItem="d2l-IH-Lk0" firstAttribute="trailing" secondItem="H0n-Ve-Q4G" secondAttribute="trailing" constant="20" id="Z2m-LO-emc"/>
+                            <constraint firstItem="d2l-IH-Lk0" firstAttribute="trailing" secondItem="5M2-iQ-CH3" secondAttribute="trailing" constant="20" id="syM-TY-it5"/>
+                            <constraint firstItem="H0n-Ve-Q4G" firstAttribute="top" secondItem="d2l-IH-Lk0" secondAttribute="top" constant="20" id="wat-Sw-8Ac"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d2l-IH-Lk0"/>
+                    </view>
+                    <connections>
+                        <outlet property="iconImage" destination="NzC-kN-6mG" id="nme-4m-7CT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QG5-zs-j4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="82"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ios_logo.png" width="256" height="256"/>
+    </resources>
 </document>
